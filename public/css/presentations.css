@@ -59,9 +59,8 @@ body[class*="dark"] .reference-card {
 }
 */
 
-/* Meta & summary: use the list-color variable for muted text (your theme updates this in dark mode) */
-.reference-card .card-summary,
-.reference-single .description-content {
+/* Summary on list cards: clamp to ~4 lines so list remains compact */
+.reference-card .card-summary {
   color: var(--list-color, #5A5A5A);
   margin: 12px 0;
   line-height: 1.6;
@@ -74,6 +73,36 @@ body[class*="dark"] .reference-card {
   transition: color .12s ease;
 }
 
+/* Full description on single pages: show entire content (no truncation) */
+.reference-single .description-content {
+  color: var(--list-color, #5A5A5A);
+  margin: 12px 0;
+  line-height: 1.6;
+
+  /* Ensure the full content (including long figcaptions) is visible */
+  display: block;
+  overflow: visible;
+  text-overflow: clip;
+  -webkit-line-clamp: unset;
+  -webkit-box-orient: unset;
+}
+
+/* Make sure figure captions inside page content are allowed to wrap and not be clipped */
+.reference-single .description-content figure,
+.reference-single .description-content figure img,
+.reference-single .description-content figure figcaption,
+.description-content figure,
+.description-content figure img,
+.description-content figure figcaption,
+.my-figure figcaption {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  max-height: none !important;
+  display: block;
+}
+
+/* Meta & summary color */
 .reference-card .card-meta,
 .reference-single .reference-meta,
 .reference-card .card-journal {

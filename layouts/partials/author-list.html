@@ -16,6 +16,7 @@
 
 {{ if gt (len $authors) 0 }}
   <div class="author-list" aria-label="Authors">
+    <span class="meta-sep">·</span>
     {{ range $i, $a := $authors }}
       {{ $id := $a }}
       {{ $data := index $page.Site.Data.authors $id }}
@@ -34,5 +35,6 @@
         <span class="author-sep">,</span>
       {{ end }}
     {{ end }}
+    <span class="meta-sep">·</span>
   </div>
 {{ end }}

@@ -13,15 +13,15 @@
         <a class="card-link" href="{{ .RelPermalink }}">
           <div class="card-inner">
             <h2 class="card-title">{{ .Title }}</h2>
-
-            <div class="card-authors">{{ partial "author-list.html" . }}</div>
-
-            {{ with .Params.event }}
-              <div class="card-event">{{ . }}</div>
+ 
+	    <div class="card-authors">{{partial "author-list.html" .}}</div>
+           
+	    {{ with .Params.event }}
+              <div class="card-event"><span class="meta-sep">·</span> {{ . }} <span><span class="meta-sep">·</span></div>
             {{ end }}
 
 	    {{ with .Params.location }}
-              <div class="card-location">{{ . }}</div>
+              <div class="card-location"><span class="meta-sep">·</span> {{ . }} <span><span class="meta-sep">·</span></div>
             {{ end }}
 
             {{ with .Params.doi }}

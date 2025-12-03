@@ -1,14 +1,10 @@
 ---
 title: "Current Tides"
-summary: "Summary of the activity"
-draft: true
+summary: "A student-run popular science publication showcasing the active research of Dalhousie University's Oceanography graduate students."
+draft: false
 ---
 
-Text about the activity!
+Current Tides is a biennial popular science magazine that is completely written and published by a team of volunteer graduate students in the department of Oceanography at Dalhousie University. The goal is to make current research done by oceanography graduate students accessible to a wide audience including non-scientists. You can read the latest and previous issues (for free!) on the [Current Tides Website](https://currenttides.ocean.dal.ca/).
 
-<figure class="my-figure">
-  <img src="/images/image.jpg" alt="Short alt text">
-  <figcaption>Figure 1. An illustrative caption describing the image.</figcaption>
-</figure>
-
+My involvement with Current Tides started in 2022 when I volunteered to be an editor for Volume 6 (to be released soon, link here). I loved the idea so much that I am now the Editor-in-Chief for Volume 7! Look out for the next issue to be published in 2028.
 

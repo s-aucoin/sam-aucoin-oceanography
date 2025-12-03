@@ -17,7 +17,7 @@
             <div class="card-authors">{{ partial "author-list.html" . }}</div>
 
             {{ with .Params.journal }}
-              <div class="card-journal">{{ . }}</div>
+              <div class="card-journal"><span class="meta-sep">·</span> {{ . }} <span class="meta-sep">·</span></div>
             {{ end }}
 
             {{ with .Params.doi }}
