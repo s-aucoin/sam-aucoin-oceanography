@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Activities on Sam Aucoin</title>
-    <link>https://samaucoin.org/activities/</link>
+    <link>http://localhost:1313/activities/</link>
     <description>Recent content in Activities on Sam Aucoin</description>
     <generator>Hugo</generator>
     <language>en-ca</language>
-    <atom:link href="https://samaucoin.org/activities/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/activities/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Current Tides</title>
-      <link>https://samaucoin.org/activities/currenttides/</link>
+      <link>http://localhost:1313/activities/currenttides/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://samaucoin.org/activities/currenttides/</guid>
+      <guid>http://localhost:1313/activities/currenttides/</guid>
       <description>A student-run popular science publication showcasing the active research of Dalhousie University&amp;rsquo;s Oceanography graduate students.</description>
     </item>
     <item>
       <title>Kayaking</title>
-      <link>https://samaucoin.org/activities/kayaking/</link>
+      <link>http://localhost:1313/activities/kayaking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://samaucoin.org/activities/kayaking/</guid>
+      <guid>http://localhost:1313/activities/kayaking/</guid>
       <description>Sea kayaking is probably the quickest way to experience the power of the ocean.</description>
     </item>
   </channel>
