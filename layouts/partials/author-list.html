@@ -21,9 +21,14 @@
       {{ $id := $a }}
       {{ $data := index $page.Site.Data.authors $id }}
       {{ if $data }}
-        <a class="author-item" href="{{ with $data.url }}{{ . }}{{ else }}/authors/{{ $id | urlize }}{{ end }}">
+        <a class="author-item" href="{{ with $data.url }}{{ . }}{{ else }}{{ (printf "authors/%s" (urlize $id)) | relURL }}{{ end }}">
           {{ with $data.avatar }}
-            <img class="author-avatar" src="{{ . }}" alt="{{ $data.name }}" />
+            {{ $avatar := . }}
+            {{ if (hasPrefix $avatar "http") }}
+              <img class="author-avatar" src="{{ $avatar }}" alt="{{ $data.name }}" />
+            {{ else }}
+              <img class="author-avatar" src="{{ $avatar | relURL }}" alt="{{ $data.name }}" />
+            {{ end }}
           {{ end }}
           <span class="author-name">{{ $data.name }}</span>
         </a>
