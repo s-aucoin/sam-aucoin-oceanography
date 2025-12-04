@@ -1,0 +1,57 @@
+{{/* Shortcode: figure
+   Usage (in content files):
+   - From inside the same leaf bundle (recommended):
+     {{< figure src="sam_float.jpg" alt="..." caption="..." >}}
+   - From another page, reference a file in a leaf bundle:
+     {{< figure src="projects/multi-source-turbulence/sam_float.jpg" alt="..." caption="..." >}}
+   - Reference a static file (static/):
+     {{< figure src="files/myicon.jpg" alt="..." caption="..." >}}
+
+   This shortcode prefers page resources (leaf-bundle files) and falls back to treating
+   the src as a static path (passed through relURL) so it works with a baseURL subpath.
+*/}}
+
+{{ $src := .Get "src" | default "" }}
+{{ if not $src }}
+  {{ errorf "figure shortcode: missing src parameter" }}
+{{ end }}
+
+{{ $alt := .Get "alt" | default "" }}
+{{ $caption := .Get "caption" | default "" }}
+{{ $class := .Get "class" | default "my-figure" }}
+
+{{ $isExternal := or (strings.HasPrefix $src "http://") (strings.HasPrefix $src "https://") (strings.HasPrefix $src "//") }}
+{{ $.Scratch.Set "imgURL" "" }}
+
+{{ if $isExternal }}
+  {{ $.Scratch.Set "imgURL" $src }}
+{{ else }}
+  {{/* 1) Try the current page's resources (use when shortcode is used inside the leaf bundle) */}}
+  {{ with .Page.Resources.GetMatch $src }}
+    {{ $.Scratch.Set "imgURL" .RelPermalink }}
+  {{ end }}
+
+  {{/* 2) If not found and src looks like a path, try to find the bundle page and its resources */}}
+  {{ if eq ($.Scratch.Get "imgURL") "" }}
+    {{ $parts := split $src "/" }}
+    {{ if gt (len $parts) 1 }}
+      {{ $filename := index $parts (sub (len $parts) 1) }}
+      {{ $dir := delimit (slice $parts 0 (sub (len $parts) 1)) "/" }}
+      {{ with $.Site.GetPage (printf "/%s" $dir) }}
+        {{ with .Resources.GetMatch $filename }}
+          {{ $.Scratch.Set "imgURL" .RelPermalink }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{/* 3) Fallback: treat as static file and make it respect baseURL */}}
+  {{ if eq ($.Scratch.Get "imgURL") "" }}
+    {{ $.Scratch.Set "imgURL" ($src | relURL) }}
+  {{ end }}
+{{ end }}
+
+<figure class="{{ $class }}">
+  <img src="{{ $.Scratch.Get "imgURL" }}" alt="{{ $alt }}">
+  {{ if ne $caption "" }}<figcaption>{{ $caption }}</figcaption>{{ end }}
+</figure>

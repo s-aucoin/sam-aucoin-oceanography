@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Sam Aucoin</title>
-    <link>http://localhost:1313/sam-aucoin-oceanography/projects/</link>
+    <link>https://s-aucoin.github.io/sam-aucoin-oceanography/projects/</link>
     <description>Recent content in Projects on Sam Aucoin</description>
     <generator>Hugo</generator>
     <language>en-ca</language>
-    <atom:link href="http://localhost:1313/sam-aucoin-oceanography/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://s-aucoin.github.io/sam-aucoin-oceanography/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Multi-Source Turbulence</title>
-      <link>http://localhost:1313/sam-aucoin-oceanography/projects/multi-source-turbulence/</link>
+      <link>https://s-aucoin.github.io/sam-aucoin-oceanography/projects/multi-source-turbulence/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/sam-aucoin-oceanography/projects/multi-source-turbulence/</guid>
+      <guid>https://s-aucoin.github.io/sam-aucoin-oceanography/projects/multi-source-turbulence/</guid>
       <description>How does multi-source turbulence differ from single-source turbulence?</description>
     </item>
     <item>
       <title>Submarine Groundwater Discharge</title>
-      <link>http://localhost:1313/sam-aucoin-oceanography/projects/sgd/</link>
+      <link>https://s-aucoin.github.io/sam-aucoin-oceanography/projects/sgd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/sam-aucoin-oceanography/projects/sgd/</guid>
+      <guid>https://s-aucoin.github.io/sam-aucoin-oceanography/projects/sgd/</guid>
       <description>Investigating the dynamics of fresh submarine groundwater discharge in a coastal setting.</description>
     </item>
     <item>
       <title>Under-Ice Turbulence and Mixing</title>
-      <link>http://localhost:1313/sam-aucoin-oceanography/projects/under-ice-turbulence-mixing/</link>
+      <link>https://s-aucoin.github.io/sam-aucoin-oceanography/projects/under-ice-turbulence-mixing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/sam-aucoin-oceanography/projects/under-ice-turbulence-mixing/</guid>
+      <guid>https://s-aucoin.github.io/sam-aucoin-oceanography/projects/under-ice-turbulence-mixing/</guid>
       <description>How do river plumes affect under-ice turbulence and mixing in a fjord estuary?</description>
     </item>
   </channel>

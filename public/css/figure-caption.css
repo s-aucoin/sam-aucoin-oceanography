@@ -1,0 +1,19 @@
+/* Slightly lighter caption color, with fallbacks for light/dark modes.
+   Add this to your site's main stylesheet pipeline or copy to static/css/
+   and include it in your <head> if you don't use Hugo Pipes. */
+
+.figure-caption {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.95em;
+  line-height: 1.35;
+  /* default for light mode */
+  color: rgba(0, 0, 0, 0.65);
+}
+
+/* Dark-mode override (keeps contrast in dark themes like Poison) */
+@media (prefers-color-scheme: dark) {
+  .figure-caption {
+    color: rgba(255, 255, 255, 0.75);
+  }
+}

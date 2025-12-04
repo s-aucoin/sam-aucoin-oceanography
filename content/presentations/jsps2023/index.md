@@ -15,7 +15,5 @@ aliases: []
 draft: false
 ---
 
-<figure class="my-figure">
-  <img src="presentations/jsps2023/SGD_36x48_Poster_V3.png" alt="JSPS Poster">
-  <figcaption>The poster that I presented at the Japan Society for the Promotion of Science Summer Program mini-conference.</figcaption>
-</figure>
+{{< figure src="SGD_36x48_Poster_V3.png" alt="JSPS Poster" caption="The poster that I presented at the Japan Society for the Promotion of Science Summer Program mini-conference." >}}
+

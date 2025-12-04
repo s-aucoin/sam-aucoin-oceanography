@@ -9,9 +9,5 @@ My research in this area relates to the dynamics of SGD springs and how knowledg
 
 I've presented on this topic at a few conferences. You can see some of the posters I have showed [here]({{< ref "presentations/grc2024.md" >}}) and [here]({{< ref "presentations/jsps2023.md" >}}). Stay tuned for publications on SGD.
 
-<figure class="my-figure">
-  <img src="projects/sgd/sgd_spring.jpg" alt="SGD spring">
-  <figcaption>Photo of a submarine groundwater discharge spring in Japan. It is visible by the shimmering caused by the index of refraction differences in the actively mixing freshwater plume.</figcaption>
-</figure>
 
-
+{{< figure src="sgd_spring.jpg" alt="SGD spring" caption="Photo of a submarine groundwater discharge spring in Japan. It is visible by the shimmering caused by the index of refraction differences in the actively mixing freshwater plume." >}}

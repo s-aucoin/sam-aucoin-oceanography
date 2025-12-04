@@ -10,9 +10,4 @@ pdf: ""
 draft: true
 ---
 
-<figure class="my-figure">
-  <img src="/images/image.jpg" alt="Short alt text">
-  <figcaption>Figure 1. An illustrative caption describing the image.</figcaption>
-</figure>
-
-
+{{< figure src="figure.jpg" alt="..." caption="..." >}}

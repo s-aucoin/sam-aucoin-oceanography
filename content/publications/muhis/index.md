@@ -14,8 +14,4 @@ pdf: ""
 draft: false
 ---
 
-<figure class="my-figure">
-  <img src="publications/muhis/MUHI_asphalt_concrete_overlap.png" alt="MUHIs in Montreal">
-  <figcaption>Micro Urban Heat Islands (MUHI) colocation with asphalt and concrete on August 10th, 2021. MUHIs are
-identified using the top 2% of temperatures. The region around the Montréal Trudeau International Airport is shown in the inset.</figcaption>
-</figure>
+{{< figure src="MUHI_asphalt_concrete_overlap.png" alt="MUHIs in Montreal" caption="Micro Urban Heat Islands (MUHI) colocation with asphalt and concrete on August 10th, 2021. MUHIs are identified using the top 2% of temperatures. The region around the Montréal Trudeau International Airport is shown in the inset." >}}

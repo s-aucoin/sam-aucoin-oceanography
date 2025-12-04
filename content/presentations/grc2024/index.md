@@ -14,8 +14,4 @@ aliases: []
 draft: false
 ---
 
-
-<figure class="my-figure">
-  <img src="presentations/grc2024/SA_GRC_Poster_final_png.png" alt="GRC Mixing 2024 Poster">
-  <figcaption>The poster I presented at the GRC Mixing Conference in 2024.</figcaption>
-</figure>
+{{< figure src="SA_GRC_Poster_final_png.png" alt="GRC Mixing 2024 Poster" caption="The poster I presented at the GRC Mixing Conference in 2024." >}}

@@ -9,9 +9,4 @@ Some of the research I do is centered around the turbulence and mixing in plume 
 My involvement with the project started in 2024 and continues today. Stay tuned for publications and more information on the topic.
 
 
-<figure class="my-figure">
-  <img src="projects/under-ice-turbulence-mixing/snowman_ctd_cast.jpg" alt="Help with measurements">
-  <figcaption>A very helpful fellow in collecting context CTD measurements in Kaipokok Bay, NL.</figcaption>
-</figure>
-
-
+{{< figure src="snowman_ctd_cast.jpg" alt="Help with measurements" caption="A very helpful fellow in collecting context CTD measurements in Kaipokok Bay, NL." >}}
