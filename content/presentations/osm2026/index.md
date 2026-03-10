@@ -14,4 +14,4 @@ aliases: []
 draft: false
 ---
 
-{{< figure src="OSM_2026_poster_png.png" alt="OSM 2026 Poster" caption="The poster I presented at the Ocean Sciences Meetin in 2026." >}}
+{{< figure src="OSM_2026_poster_png.png" alt="OSM 2026 Poster" caption="The poster I presented at the Ocean Sciences Meeting in 2026." >}}
