@@ -1,5 +1,5 @@
 ---
-title: "Log-Skew-Normality of Turbulent Kinetic Energy Dissipation Rate in a Buoyant Coastal Plume"
+title: "OSM26: On the Interimttency of Multi-Source Turbulence"
 date: 2026-02-26
 authors:
   - "Sam Aucoin"
